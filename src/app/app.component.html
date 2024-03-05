@@ -4,6 +4,9 @@
     <app-padre usernombre="{{nombre}}"></app-padre>
     <button (click)="verTable = !verTable">{{verTable? "dejar de ver la tabla":"ver Tabla"}}</button>
     @if (verTable === true ) {
-    <app-table [objetosDatos]="objetosDatos" />
+    <app-table (enviaraPadre)="asignarAdatorecuperado($event)" [objetosDatos]="objetosDatos" />
     }
+
+    <h1>datos recuperados son {{datoRecuperado}}</h1>
+
     <router-outlet />

@@ -32,4 +32,12 @@ export class AppComponent {
 
   }
 
+  datoRecuperado = '';
+
+  asignarAdatorecuperado(datosTable: string) {
+    this.datoRecuperado = datosTable;
+  }
+
+
+
 }

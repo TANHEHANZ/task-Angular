@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { datos } from './data';
 
 @Component({
@@ -10,7 +10,11 @@ import { datos } from './data';
 })
 export class TableComponent {
   @Input() objetosDatos: datos | any = null;
+  /* @Output() envioParam: string | any = null; */
 
+  @Output() enviaraPadre = new EventEmitter<string>();
 
-
+  envioParam(nameDAta: string) {
+    this.enviaraPadre.emit(nameDAta)
+  }
 }

@@ -9,8 +9,7 @@ import { Component, Input } from '@angular/core';
 })
 export class PadreComponent {
 
-  @Input() usernombre='';
-  
+  @Input() usernombre = '';
 
   dato = [
     {
