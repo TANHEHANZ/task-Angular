@@ -16,13 +16,15 @@ export class AppComponent {
   /* para manejar el paso de props mediante componentes  */
   nombre?: string;
   verEstado?: boolean = true;
+  verTable?: boolean = false;
+
   constructor() {
     if (this.verEstado === true) {
       this.nombre = "hanz";
     }
   }
-   /////// pasasndo objetos como parametros '
-   objetosDatos: datos = {
+  /////// pasasndo objetos como parametros '
+  objetosDatos: datos = {
     id: 1,
     date: new Date(),
     name: 'hanz',

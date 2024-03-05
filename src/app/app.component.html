@@ -2,5 +2,8 @@
 
     <h1>el nombre es : {{nombre}}</h1>
     <app-padre usernombre="{{nombre}}"></app-padre>
+    <button (click)="verTable = !verTable">{{verTable? "dejar de ver la tabla":"ver Tabla"}}</button>
+    @if (verTable === true ) {
     <app-table [objetosDatos]="objetosDatos" />
+    }
     <router-outlet />
