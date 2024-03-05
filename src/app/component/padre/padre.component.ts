@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-padre',
@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './padre.component.css'
 })
 export class PadreComponent {
+
+  @Input() usernombre='';
+  
+
   dato = [
     {
       id: 1,
