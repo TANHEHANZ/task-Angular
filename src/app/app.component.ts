@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { PadreComponent } from './component/padre/padre.component';
 import { TableComponent } from './component/table/table.component';
 import { datos } from './component/table/data';
+import { NavComponent } from './component/nav/nav.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PadreComponent, TableComponent],
+  imports: [RouterOutlet, PadreComponent, TableComponent, NavComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
