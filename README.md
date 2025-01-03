@@ -7,3 +7,4 @@
 - manejo de componentes
 - manejo de rutas
 - manejo de side rendering
+todo con angular 19
